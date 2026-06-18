@@ -1,0 +1,162 @@
+:root{
+    --navy:#07111F;
+    --navy-light:#101A29;
+    --gold:#C6A15B;
+    --gold-light:#D9B978;
+    --silver:#C9CDD3;
+    --ivory:#F7F5F2;
+    --text:#1A1A1A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--ivory);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.8;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(
+        180deg,
+        var(--navy) 0%,
+        var(--navy-light) 100%
+    );
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.logo{
+    width:260px;
+    margin-bottom:40px;
+}
+
+.symbol{
+    font-family:'Cormorant Garamond',serif;
+    font-size:5rem;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:5rem;
+    font-weight:400;
+    letter-spacing:0.15em;
+}
+
+.tagline{
+    color:var(--silver);
+    font-size:1.3rem;
+    margin-top:20px;
+}
+
+.hero-quote{
+    color:var(--gold);
+    margin-top:40px;
+    font-style:italic;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:120px 40px;
+}
+
+section{
+    margin-bottom:120px;
+}
+
+h2{
+    color:var(--gold);
+    font-size:3rem;
+    margin-bottom:40px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.highlight{
+    color:var(--gold);
+}
+
+.quote-block{
+    margin-top:60px;
+    padding-left:30px;
+    border-left:3px solid var(--gold);
+    font-style:italic;
+    font-size:1.6rem;
+}
+
+.symbol-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.symbol-card{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.symbol-letter{
+    font-size:4rem;
+    color:var(--gold);
+}
+
+.philosophy{
+    background:var(--navy);
+    color:white;
+    padding:80px;
+    border-radius:20px;
+}
+
+.statement{
+    color:var(--gold);
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:30px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+footer{
+    background:var(--navy);
+    color:var(--silver);
+    text-align:center;
+    padding:60px;
+}
+
+.footer-symbol{
+    color:var(--gold);
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:3rem;
+    }
+
+    .symbol-grid{
+        grid-template-columns:1fr;
+    }
+
+    .philosophy{
+        padding:40px;
+    }
+}
