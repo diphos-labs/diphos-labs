@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Corporate documents
+corporate/registration/*.pdf
+corporate/tax/*.pdf
+corporate/banking/*.pdf
+
+# Secrets
+.env
+.env.local
+
+# Terraform
+*.tfstate
+*.tfstate.backup
